@@ -1,0 +1,16 @@
+.search-results {
+  .search-results-text {
+    position: relative;
+    top: -25px;
+    left: 20px;
+    padding: 0 10px;
+    background-color: white;
+    display: inline-block
+  }
+
+  .search-pagination {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}

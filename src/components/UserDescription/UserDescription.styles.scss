@@ -1,0 +1,51 @@
+.user-details-card {
+  position: sticky;
+  top: 200px;
+  right: 0;
+  width: auto;
+  min-height: 500px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  padding: 2%;
+
+  .user-details-close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .user-details-avatar {
+    margin-left: calc(50% - 50px);
+  }
+
+  .user-details-title {
+    margin: 5px;
+  }
+
+  .user-details-bio {
+    color: gray;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .user-github-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .user-details-location {
+    margin: 20px 0px;
+
+    .user-details-location-icon {
+      margin-bottom: -5px;
+      margin-left: 2px;
+    }
+  }
+}

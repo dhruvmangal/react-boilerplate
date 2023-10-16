@@ -1,0 +1,16 @@
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(30,30,30,0.5);
+  z-index: 50;
+  display: flex;
+  .loader {
+    position: absolute;
+    top: calc(50vh - 20px);
+    left: calc(50vw - 20px);
+
+  }
+}

@@ -1,0 +1,21 @@
+.search-card {
+  padding: 20px 5px;
+  border-bottom: 1px solid #d3d3d3;
+  box-shadow: none;
+  border-radius: 0%;
+
+  .search-card-avatar {
+    float: left;
+    margin-right: 10px;
+  }
+
+  .search-card-title {
+    float: left;
+    margin: 3 px 5px;
+    cursor: pointer;
+  }
+
+  .search-card-title:hover {
+    text-decoration: underline;
+  }
+}
