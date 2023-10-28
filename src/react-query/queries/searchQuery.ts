@@ -28,4 +28,3 @@ export const useGetGithubSearchQuery = (searchType: string, searchParam: string,
 
   return query;
 }
-

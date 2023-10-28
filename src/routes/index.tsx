@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { Routes, Route, Navigate, } from 'react-router-dom';
-import RouteList from './RouteList';
+import RouteList, { ProtectedRouteList } from './RouteList';
 import type { RouteListType } from './routes.types';
+import ProtectedRoute from './ProtectedRoute';
+import NotFound from '../components/NotFound/NotFound';
 
 const AppRoutes: React.FC = (): JSX.Element => {
 
@@ -33,7 +35,14 @@ const AppRoutes: React.FC = (): JSX.Element => {
       {
         renderRoutes(RouteList)
       }
-      {/* <Route path='*' element={<PageNotFound />} /> */}
+
+      <Route element={<ProtectedRoute/>}>
+      {
+        renderRoutes(ProtectedRouteList)
+      }
+      </Route>
+      
+      <Route path='*' element={<NotFound />} />
     </Routes>
   )
 }

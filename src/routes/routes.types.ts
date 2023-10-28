@@ -4,3 +4,7 @@ export interface RouteListType {
   component: React.FC,
   children?: RouteListType[]
 }
+
+export interface ProtectedRouteListType extends RouteListType {
+  protected: boolean
+}
